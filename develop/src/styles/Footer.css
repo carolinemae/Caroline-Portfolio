@@ -1,0 +1,16 @@
+:root {
+    --color-one: white;
+    --color-two: #d8cac1;
+    --color-three: #a9988e;
+    --color-four: #6e625b;
+    --color-five: #eee9e6;
+}
+
+.footer {
+    /* position: absolute; */
+    /* bottom: 0%; */
+    width: 98%;
+    color: var(--color-three);
+    background-color: var(--color-five);
+    padding: 1%;
+}

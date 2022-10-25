@@ -64,7 +64,7 @@ function Header({ currentPage, handlePageChange }) {
       </div>
       <div className='hidden-nav' style={{display: hiddenNav ? 'flex' : 'none'}}>
         <ul className="hidden-nav-links">
-          <li className="nav-item">
+          <li className="hidden-nav-item">
             <a
               href="#about"
               onClick={() => handlePageChange('About')}
@@ -74,7 +74,7 @@ function Header({ currentPage, handlePageChange }) {
               About
             </a>
           </li>
-          <li className="nav-item">
+          <li className="hidden-nav-item">
             <a
               href="#portfolio"
               onClick={() => handlePageChange('Portfolio')}
@@ -84,7 +84,7 @@ function Header({ currentPage, handlePageChange }) {
               Portfolio
             </a>
           </li>
-          <li className="nav-item">
+          <li className="hidden-nav-item">
             <a
               href="#contact"
               onClick={() => handlePageChange('Contact')}
@@ -94,7 +94,7 @@ function Header({ currentPage, handlePageChange }) {
               Contact
             </a>
           </li>
-          <li className="nav-item">
+          <li className="hidden-nav-item">
             <a
               href="#resume"
               onClick={() => handlePageChange('Resume')}

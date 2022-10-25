@@ -71,10 +71,25 @@
 .hidden-nav-links {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .hidden-nav-links li {
     padding-left: 10px;
+}
+
+.hidden-nav-item a {
+    text-decoration: none;
+    width: 100%;
+    color: var(--color-three);
+}
+
+.hidden-nav-item:hover {
+    background-color: var(--color-one);
+}
+
+.hidden-nav-item .active {
+    color: var(--color-four);
 }
 
 @media only screen and (max-width: 650px) {

@@ -21,7 +21,7 @@ export default function Portfolio() {
             <a href='https://mysterious-journey-75550.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/jkoufalas/codeIt.git'>GitHub Repository</a>
+          <a href='https://github.com/jkoufalas/codeIt.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
         <div className='portfolio-card'>
@@ -33,7 +33,7 @@ export default function Portfolio() {
             <a href='https://mysterious-journey-75550.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/carolinemae/YouTrailer.git'>GitHub Repository</a>
+          <a href='https://github.com/carolinemae/YouTrailer.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
         <div className='portfolio-card'>
@@ -45,7 +45,7 @@ export default function Portfolio() {
             <a href='https://carolines-text-editor.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/carolinemae/text-editor.git'>GitHub Repository</a>
+          <a href='https://github.com/carolinemae/text-editor.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
         <div className='portfolio-card'>
@@ -57,7 +57,7 @@ export default function Portfolio() {
             <a href='https://carolines-tech-blog.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/carolinemae/tech-blog.git'>GitHub Repository</a>
+          <a href='https://github.com/carolinemae/tech-blog.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
         <div className='portfolio-card'>
@@ -69,7 +69,7 @@ export default function Portfolio() {
             <a href='https://fast-gorge-03219.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/carolinemae/note-taker'>GitHub Repository</a>
+          <a href='https://github.com/carolinemae/note-taker' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
         <div className='portfolio-card'>
@@ -81,7 +81,7 @@ export default function Portfolio() {
             <a href='https://carolinemae.github.io/Module-06-Challenge/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
           </p>
           <p>
-          <a href='https://github.com/carolinemae/Module-06-Challenge.git'>GitHub Repository</a>
+          <a href='https://github.com/carolinemae/Module-06-Challenge.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </p>
         </div>
       </div>

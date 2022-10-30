@@ -6,12 +6,14 @@ import '../styles/Header.css';
 function Header({ currentPage, handlePageChange }) {
   const [hiddenNav, setHiddenNav] = useState(false);
 
+  // Toggles visibility of hamburger nav list
   const handleClick = () => {
     setHiddenNav(current => !current);
   };
 
   return (
     <div className='complete-header'>
+      {/* Main header is hidden when page width is changed */}
       <div className='header'>
         <h1 className='name'>Caroline</h1>
         <ul className="nav">
@@ -62,6 +64,7 @@ function Header({ currentPage, handlePageChange }) {
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </div>
+      {/* Hamburger nav is unhidden when page width is changed */}
       <div className='hidden-nav' style={{display: hiddenNav ? 'flex' : 'none'}}>
         <ul className="hidden-nav-links">
           <li className="hidden-nav-item">

@@ -25,8 +25,71 @@
     padding-bottom: 10px;
 }
 
+#portrait {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px dotted var(--color-three);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.portfolio-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-card img {
+    height: 200px;
+}
+
+.portfolio-card a {
+    color: var(--color-three);
+    text-decoration: none;
+}
+
+.portfolio-card a:hover {
+    color: var(--color-two);
+}
+
+form {
+    display: flex;
+}
+
+form p {
+    height: 40px;
+}
+
+form .form-labels {
+    width: 120px;
+}
+
+form .form-input input, textarea {
+    width: 300px;
+}
+
 @media only screen and (max-width: 650px) {
     .nav {
+        transition: 0.5s;
         display: none;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .portfolio-card img {
+        transition: 0.5s;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .portfolio-card img {
+        height: 150px;
+        transition: 0.5s;
     }
 }

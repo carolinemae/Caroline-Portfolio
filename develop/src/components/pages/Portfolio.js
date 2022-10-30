@@ -1,25 +1,90 @@
 import React from 'react';
 import '../../styles/Pages.css';
+import codeIt from '../../images/codeIt.png';
+import YouTrailer from '../../images/YouTrailer.jpg';
+import JATE from '../../images/JATE.jpg';
+import TechBlog from '../../images/TechBlog.jpg';
+import NoteTaker from '../../images/NoteTaker.jpg';
+import WeatherDashboard from '../../images/WeatherDashboard.jpg';
 
 export default function Portfolio() {
   return (
     <div className='content-body'>
       <h1>Portfolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <div className='card-container'>
+        <div className='portfolio-card'>
+          <img src={codeIt} alt='codeIt'></img>
+          <h2>
+            CodeIt
+          </h2>
+          <p>
+            <a href='https://mysterious-journey-75550.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/jkoufalas/codeIt.git'>GitHub Repository</a>
+          </p>
+        </div>
+        <div className='portfolio-card'>
+          <img src={YouTrailer} alt='YouTrailer'></img>
+          <h2>
+          YouTrailer
+          </h2>
+          <p>
+            <a href='https://mysterious-journey-75550.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/YouTrailer.git'>GitHub Repository</a>
+          </p>
+        </div>
+        <div className='portfolio-card'>
+          <img src={JATE} alt='JATE'></img>
+          <h2>
+          Text Editor
+          </h2>
+          <p>
+            <a href='https://carolines-text-editor.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/text-editor.git'>GitHub Repository</a>
+          </p>
+        </div>
+        <div className='portfolio-card'>
+          <img src={TechBlog} alt='TechBlog'></img>
+          <h2>
+          Tech Blog
+          </h2>
+          <p>
+            <a href='https://carolines-tech-blog.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/tech-blog.git'>GitHub Repository</a>
+          </p>
+        </div>
+        <div className='portfolio-card'>
+          <img src={NoteTaker} alt='NoteTaker'></img>
+          <h2>
+          Note Taker
+          </h2>
+          <p>
+            <a href='https://fast-gorge-03219.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/note-taker'>GitHub Repository</a>
+          </p>
+        </div>
+        <div className='portfolio-card'>
+          <img src={WeatherDashboard} alt='WeatherDashboard'></img>
+          <h2>
+          Weather Dashboard
+          </h2>
+          <p>
+            <a href='https://carolinemae.github.io/Module-06-Challenge/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/Module-06-Challenge.git'>GitHub Repository</a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

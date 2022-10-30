@@ -5,19 +5,23 @@ export default function Contact() {
   return (
     <div className='content-body'>
       <h1>Contact Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <form>
+        <div className='form-labels'>
+          <p><label for='fname'>First name:</label></p>
+          <p><label for='lname'>Last name:</label></p>
+          <p><label for='phone'>Phone:</label></p>
+          <p><label for='email'>Email:</label></p>
+          <p><label for='message'>Message:</label></p>
+        </div>
+        <div className='form-input'>
+          <p><input type='text' id='fname' name='fname'></input></p>
+          <p><input type='text' id='lname' name='lname'></input></p>
+          <p><input type='text' id='phone' name='phone'></input></p>
+          <p><input type='text' id='email' name='email'></input></p>
+          <p><textarea type='text' id='message' name='message'></textarea></p>
+        </div>
+      </form>
+      <button>Send!</button>
     </div>
   );
 }

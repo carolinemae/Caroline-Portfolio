@@ -5,6 +5,10 @@ This application is my Portfolio using React.
 ---
 ## Table of Content
 1. [User Story](#user-story)
+1. [Acceptance Criteria](#acceptance-criteria)
+1. [Usage](#usage)
+1. [Screenshots](#screenshots)
+1. [Links](#links)
 
 ---
 ## User Story

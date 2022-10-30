@@ -30,6 +30,12 @@
     width: 100px;
     border-radius: 50%;
     border: 2px dotted var(--color-three);
+    margin-right: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
 }
 
 .card-container {
@@ -55,6 +61,21 @@
 
 .portfolio-card a:hover {
     color: var(--color-two);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer img {
+    margin: 0px 5px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
 }
 
 form {

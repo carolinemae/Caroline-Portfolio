@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Pages.css';
+import JobTracker from '../../images/JobTracker.jpg';
 import codeIt from '../../images/codeIt.png';
 import YouTrailer from '../../images/YouTrailer.jpg';
 import JATE from '../../images/JATE.jpg';
@@ -12,6 +13,18 @@ export default function Portfolio() {
     <div className='content-body'>
       <h1>Portfolio</h1>
       <div className='card-container'>
+      <div className='portfolio-card'>
+          <img src={JobTracker} alt='JobTracker'></img>
+          <h2>
+          Job Tracker
+          </h2>
+          <p>
+            <a href='https://vast-woodland-80895.herokuapp.com/' target="_blank" rel="noopener noreferrer">Deployed Application</a>
+          </p>
+          <p>
+          <a href='https://github.com/carolinemae/Job-Tracker.git' target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </p>
+        </div>
         <div className='portfolio-card'>
           <img src={codeIt} alt='codeIt'></img>
           <h2>

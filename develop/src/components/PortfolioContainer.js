@@ -26,7 +26,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <main>
       {/* We are passing the currentPage from state and the function to update it */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
@@ -35,6 +35,6 @@ export default function PortfolioContainer() {
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
       </style>
-    </div>
+    </main>
   );
 }

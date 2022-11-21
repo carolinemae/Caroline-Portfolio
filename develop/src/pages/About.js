@@ -14,7 +14,7 @@ export default function About() {
           I am hoping to gain employment as a junior full stack developer.<br/>
         </div>
       </div>
-      <div className='about-portfolio'></div>
+      {/* <div className='about-portfolio'></div> */}
     </div>
   );
 }

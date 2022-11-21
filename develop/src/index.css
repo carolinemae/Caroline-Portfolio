@@ -38,6 +38,10 @@ html {
     transition: 0.5s;
 }
 
+.name-img {
+    max-width: 100vw;
+}
+
 .name:hover {
     cursor: default;
     /* color: #43d4bc; */

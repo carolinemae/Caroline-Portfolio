@@ -32,7 +32,12 @@ export default function PortfolioContainer() {
 
   window.addEventListener("scroll", (event) => {
     const navLinks = document.querySelectorAll('.nav-link');
-    if (window.pageYOffset < 1945) {
+    const scroll = window.pageYOffset;
+    if (scroll < 1945) {
+      for (const navLink of navLinks) {
+        navLink.classList.add('light-nav');
+      }
+    } else if (scroll > 2795) {
       for (const navLink of navLinks) {
         navLink.classList.add('light-nav');
       }

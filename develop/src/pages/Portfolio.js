@@ -10,50 +10,66 @@ export default function Portfolio() {
       name: 'JobTracker',
       image: require('../images/JobTracker.jpg'),
       url: 'https://vast-woodland-80895.herokuapp.com',
-      github: 'https://github.com/carolinemae/Job-Tracker.git'
+      github: 'https://github.com/carolinemae/Job-Tracker.git',
+      desc: 'Create projects and timesheets to record employee and project activity',
     },
-    {
-      name: 'codeIt',
-      image: require('../images/codeIt.png'),
-      url: 'https://mysterious-journey-75550.herokuapp.com',
-      github: 'https://github.com/jkoufalas/codeIt.git'
-    },
-    {
-      name: 'Tech Blog',
-      image: require('../images/TechBlog.jpg'),
-      url: 'https://carolines-tech-blog.herokuapp.com',
-      github: 'https://github.com/jkoufalas/codeIt.git'
-    },
-    {
-      name: 'YouTrailer',
-      image: require('../images/YouTrailer.jpg'),
-      url: 'https://carolinemae.github.io/YouTrailer',
-      github: 'https://github.com/carolinemae/tech-blog.git'
-    },
-    {
-      name: 'Text Editor',
-      image: require('../images/JATE.jpg'),
-      url: 'https://carolines-text-editor.herokuapp.com',
-      github: 'https://github.com/carolinemae/text-editor.git'
-    },
-    {
-      name: 'Note Taker',
-      image: require('../images/NoteTaker.jpg'),
-      url: 'https://fast-gorge-03219.herokuapp.com',
-      github: 'https://github.com/carolinemae/note-taker'
-    },
-    {
-      name: 'Weather Dashboard',
-      image: require('../images/NoteTaker.jpg'),
-      url: 'https://carolinemae.github.io/Module-06-Challenge',
-      github: 'https://github.com/carolinemae/Module-06-Challenge.git'
-    },
+    // {
+    //   name: 'codeIt',
+    //   image: require('../images/codeIt.png'),
+    //   url: 'https://mysterious-journey-75550.herokuapp.com',
+    //   github: 'https://github.com/jkoufalas/codeIt.git'
+    // },
+    // {
+    //   name: 'Tech Blog',
+    //   image: require('../images/TechBlog.jpg'),
+    //   url: 'https://carolines-tech-blog.herokuapp.com',
+    //   github: 'https://github.com/jkoufalas/codeIt.git'
+    // },
+    // {
+    //   name: 'YouTrailer',
+    //   image: require('../images/YouTrailer.jpg'),
+    //   url: 'https://carolinemae.github.io/YouTrailer',
+    //   github: 'https://github.com/carolinemae/tech-blog.git'
+    // },
+    // {
+    //   name: 'Text Editor',
+    //   image: require('../images/JATE.jpg'),
+    //   url: 'https://carolines-text-editor.herokuapp.com',
+    //   github: 'https://github.com/carolinemae/text-editor.git'
+    // },
+    // {
+    //   name: 'Note Taker',
+    //   image: require('../images/NoteTaker.jpg'),
+    //   url: 'https://fast-gorge-03219.herokuapp.com',
+    //   github: 'https://github.com/carolinemae/note-taker'
+    // },
+    // {
+    //   name: 'Weather Dashboard',
+    //   image: require('../images/WeatherDashboard.jpg'),
+    //   url: 'https://carolinemae.github.io/Weather-Dashboard/',
+    //   github: 'https://github.com/carolinemae/Weather-Dashboard'
+    // },
   ];
 
   return (
-    <div>
-      <div className='anchor content-body portfolio' id='portfolio'>
-        <Carousel>
+    <div className='anchor content-body portfolio' id='portfolio'>
+      <h1 className='heading-projects'>My Projects</h1>
+      <div className='portfolio-content'>
+        {projects && projects.map((project) => (
+          <div className='project-card' key={project.name}>
+            <img className='project-img' src={project.image} alt={project.name} />
+            <div className='project-details'>
+              <h3 className='project-name'>{project.name}</h3>
+              <p className='project-desc'>{project.desc}</p>
+              <a href={project.url}  target='_blank' rel='noreferrer' className='project-link'>View</a><br/>
+              <a href={project.github}  target='_blank' rel='noreferrer' className='project-link'>GitHub</a>
+            </div>
+          </div>
+        ))}
+
+
+
+        {/* <Carousel>
           {projects && projects.map((project) => (
             <Carousel.Item key={project.name}>
               <img
@@ -62,14 +78,12 @@ export default function Portfolio() {
                 alt={project.name}
               />
               <Carousel.Caption>
-                {/* <h3>{project.name}</h3> */}
                 <p>{project.url}</p>
                 <p>{project.github}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
-
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   );

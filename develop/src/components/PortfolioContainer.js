@@ -9,45 +9,8 @@ import Resume from '../pages/Resume';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
-  // const renderPage = () => {
-  //   if (currentPage === 'Home') {
-  //     return <Home />;
-  //   }
-  //   if (currentPage === 'About') {
-  //     return <About />;
-  //   }
-  //   if (currentPage === 'Portfolio') {
-  //     return <Portfolio />;
-  //   }
-  //   if (currentPage === 'Contact') {
-  //     return <Contact />;
-  //   }
-  //   return <Resume />;
-  // };
-
   const handlePageChange = (page) => setCurrentPage(page);
-
-  // console.log(document.documentElement.clientHeight);
-
-  // window.addEventListener("scroll", (event) => {
-  //   const navLinks = document.querySelectorAll('.nav-link');
-  //   const scroll = window.pageYOffset;
-  //   if (scroll < 1945) {
-  //     for (const navLink of navLinks) {
-  //       navLink.classList.add('light-nav');
-  //     }
-  //   } else if (scroll > 2795) {
-  //     for (const navLink of navLinks) {
-  //       navLink.classList.add('light-nav');
-  //     }
-  //   } else {
-  //     for (const navLink of navLinks) {
-  //       navLink.classList.remove('light-nav');
-  //     }
-  //   }
-  // });
-
+  
   return (
     <main>
       {/* We are passing the currentPage from state and the function to update it */}
@@ -56,7 +19,7 @@ export default function PortfolioContainer() {
       {/* {renderPage()} */}
       <Home />
       <About />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Resume />
       <Contact />
       <style>

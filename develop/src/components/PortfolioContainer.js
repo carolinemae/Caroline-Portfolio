@@ -28,25 +28,25 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
-  console.log(document.documentElement.clientHeight);
+  // console.log(document.documentElement.clientHeight);
 
-  window.addEventListener("scroll", (event) => {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const scroll = window.pageYOffset;
-    if (scroll < 1945) {
-      for (const navLink of navLinks) {
-        navLink.classList.add('light-nav');
-      }
-    } else if (scroll > 2795) {
-      for (const navLink of navLinks) {
-        navLink.classList.add('light-nav');
-      }
-    } else {
-      for (const navLink of navLinks) {
-        navLink.classList.remove('light-nav');
-      }
-    }
-  });
+  // window.addEventListener("scroll", (event) => {
+  //   const navLinks = document.querySelectorAll('.nav-link');
+  //   const scroll = window.pageYOffset;
+  //   if (scroll < 1945) {
+  //     for (const navLink of navLinks) {
+  //       navLink.classList.add('light-nav');
+  //     }
+  //   } else if (scroll > 2795) {
+  //     for (const navLink of navLinks) {
+  //       navLink.classList.add('light-nav');
+  //     }
+  //   } else {
+  //     for (const navLink of navLinks) {
+  //       navLink.classList.remove('light-nav');
+  //     }
+  //   }
+  // });
 
   return (
     <main>
@@ -56,7 +56,7 @@ export default function PortfolioContainer() {
       {/* {renderPage()} */}
       <Home />
       <About />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Resume />
       <Contact />
       <style>

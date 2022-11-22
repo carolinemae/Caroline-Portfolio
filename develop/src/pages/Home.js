@@ -11,8 +11,6 @@ export default function Home() {
                     <img src={nameGif} className='name-img' alt='name' />
                 </h1>
             </div>
-            <div className='home-about'></div>            
         </div>
-
     );
 }

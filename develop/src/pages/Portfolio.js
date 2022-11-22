@@ -55,7 +55,7 @@ export default function Portfolio() {
       <div className='anchor content-body portfolio' id='portfolio'>
         <Carousel>
           {projects && projects.map((project) => (
-            <Carousel.Item>
+            <Carousel.Item key={project.name}>
               <img
                 className="project-img"
                 src={project.image}
@@ -71,7 +71,6 @@ export default function Portfolio() {
 
         </Carousel>
       </div>
-      {/* <div className='portfolio-resume'></div> */}
     </div>
   );
 }

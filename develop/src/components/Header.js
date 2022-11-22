@@ -5,25 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function Header({ currentPage, handlePageChange }) {
-
-  window.addEventListener("scroll", (event) => {
-    const scroll = window.pageYOffset;
-    const navBar = document.querySelector(".custom-nav")
-    if (scroll < 880) {
-      navBar.style.backgroundColor = "#2a2c2c";
-    } else if (scroll < 1930) {
-      navBar.style.backgroundColor = "#466a64";
-    } else if (scroll < 2795) {
-      navBar.style.backgroundColor = "white";
-    } else if (scroll < 3790) {
-      navBar.style.backgroundColor = "#37348d";
-    } else {
-      navBar.style.backgroundColor = "#2a2c2c";
-    }
-  });
-
   return (
-    <Navbar collapseOnSelect expand="lg" className='custom-nav'>
+    <Navbar collapseOnSelect expand="lg" className='custom-nav' bg="dark" variant="dark">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className='center'>
         <Nav className="me-auto align-center">

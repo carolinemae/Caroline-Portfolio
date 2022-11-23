@@ -92,7 +92,9 @@ export default function Resume() {
         </div>
       </div>
       <div className='btn-span'>
-        <a href={Download} download="Resume - Caroline Thomson" target='_blank' rel="noopener noreferrer">
+        <a 
+        // href={Download} 
+        download="Resume - Caroline Thomson" target='_blank' rel="noopener noreferrer">
           <button className='download-btn'>Download Resume</button>
         </a>
       </div>

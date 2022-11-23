@@ -42,7 +42,7 @@ export default function Contact() {
   }
 
   return (
-    <div className='anchor content-body contact' id='contact'>
+    <div className='anchor contact' id='contact'>
       <Form className='contact-form' onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>

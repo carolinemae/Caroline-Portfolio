@@ -33,11 +33,6 @@ html {
     color: #4a6967 !important;
 }
 
-div .collapse {
-    margin-top: 20px;
-    background-color: #5e5e5ed6;
-}
-
 .name {
     display: flex;
     position: sticky;

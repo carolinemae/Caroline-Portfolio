@@ -11,14 +11,15 @@ export default function Portfolio() {
       image: require('../images/JobTracker.jpg'),
       url: 'https://vast-woodland-80895.herokuapp.com',
       github: 'https://github.com/carolinemae/Job-Tracker.git',
-      desc: 'Create projects and timesheets to record employee and project activity',
+      desc: 'Create projects and timesheets to record employee and project activity\nCreated for my current workplace',
     },
-    // {
-    //   name: 'codeIt',
-    //   image: require('../images/codeIt.png'),
-    //   url: 'https://mysterious-journey-75550.herokuapp.com',
-    //   github: 'https://github.com/jkoufalas/codeIt.git'
-    // },
+    {
+      name: 'codeIt',
+      image: require('../images/codeIt.png'),
+      url: 'https://mysterious-journey-75550.herokuapp.com',
+      github: 'https://github.com/jkoufalas/codeIt.git',
+      desc: 'Collaborative project created with other students\nAn online forum to discuss all things coding',
+    },
     // {
     //   name: 'Tech Blog',
     //   image: require('../images/TechBlog.jpg'),
@@ -29,7 +30,8 @@ export default function Portfolio() {
     //   name: 'YouTrailer',
     //   image: require('../images/YouTrailer.jpg'),
     //   url: 'https://carolinemae.github.io/YouTrailer',
-    //   github: 'https://github.com/carolinemae/tech-blog.git'
+    //   github: 'https://github.com/carolinemae/tech-blog.git',
+    //   desc: 'Collaborative project created with other students',
     // },
     // {
     //   name: 'Text Editor',
@@ -51,9 +53,11 @@ export default function Portfolio() {
     // },
   ];
 
+  console.log(projects);
+
   return (
     <div className='anchor content-body portfolio' id='portfolio'>
-      <h1 className='heading-projects'>My Projects</h1>
+      <h1 className='heading-projects'>Projects</h1>
       <div className='portfolio-content'>
         {projects && projects.map((project) => (
           <div className='project-card' key={project.name}>

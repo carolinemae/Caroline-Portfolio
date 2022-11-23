@@ -11,7 +11,7 @@ export default function Portfolio() {
       image: require('../images/JobTracker.jpg'),
       url: 'https://vast-woodland-80895.herokuapp.com',
       github: 'https://github.com/carolinemae/Job-Tracker.git',
-      desc: 'Create projects and timesheets to record employee and project activity\nCreated for my current workplace',
+      desc: 'Solo project created for my current workplace\nCreate projects and timesheets to record project and employee activity',
     },
     {
       name: 'codeIt',

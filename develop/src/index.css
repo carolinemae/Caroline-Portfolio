@@ -284,6 +284,32 @@ table {
     align-items: center;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #cacaca8f;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.479);
+}
+
+footer p {
+    color: white;
+    font-size: small;
+}
+
+.social-icon {
+    height: 25px;
+    padding: 10px 5px;
+}
+
 /* 
 @media only screen and (max-width: 650px) {
     .nav {

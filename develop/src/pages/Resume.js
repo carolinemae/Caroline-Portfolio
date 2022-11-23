@@ -61,7 +61,7 @@ export default function Resume() {
             <tbody>
               <tr>
                 <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
-                <td>Communication and coordination</td>
+                <td>Communication and attitude</td>
               </tr>
               <tr>
                 <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
@@ -69,19 +69,23 @@ export default function Resume() {
               </tr>
               <tr>
                 <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
+                <td>Problem solving</td>
+              </tr>
+              <tr>
+                <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
                 <td>Ability to grasp new concepts quickly</td>
               </tr>
               <tr>
                 <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
-                <td>Computer literacy</td>
-              </tr>
-              <tr>
-                <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
-                <td>Organisation and planning</td>
+                <td>Productivity, planning & time management</td>
               </tr>
               <tr>
                 <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
                 <td>Ability to work independently & within a team</td>
+              </tr>
+              <tr>
+                <td className='star-data'>{starSolid}{starSolid}{starSolid}{starSolid}{starSolid}</td>
+                <td>Curiosity & love of learning</td>
               </tr>
             </tbody>
           </table>

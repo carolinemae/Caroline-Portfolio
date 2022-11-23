@@ -3,8 +3,9 @@ import Header from './Header';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Portfolio from '../pages/Portfolio';
-import Contact from '../pages/Contact';
 import Resume from '../pages/Resume';
+import Contact from '../pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -22,9 +23,7 @@ export default function PortfolioContainer() {
       <Portfolio />
       <Resume />
       <Contact />
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-      </style>
+      <Footer />
     </main>
   );
 }

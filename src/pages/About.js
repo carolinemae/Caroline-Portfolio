@@ -20,11 +20,6 @@ export default function About() {
             I have had a keen interest in all things coding since I was 12 years old, where I was creating simple HTML & CSS websites for fun.
             Since then, any time I've had the chance to learn more about coding, I have thoroughly enjoyed it and have absolutely loved the challenge.
           </p>
-          <p>
-            Majority of my career I have worked in administrative roles.
-            Naturally with excellent computer literacy, I have always taken on the unofficial role of IT support, helping my team whenever needed.
-            This has helped me develop great problem-solving skills, the ability to show initiative, and work effectively within a team.
-          </p>
         </div>
       </div>
     </div>

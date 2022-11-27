@@ -6,7 +6,19 @@ import Navbar from 'react-bootstrap/Navbar';
 // We assign them to their own variable names
 function Header({ currentPage, handlePageChange }) {
 
-  // console.log(document.documentElement.clientHeight);
+  function checkWidth() {
+    const viewWidth = document.documentElement.clientWidth;
+    const navList = document.querySelector('#responsive-navbar-nav');
+    if (viewWidth <= 992) {
+      navList.style.backgroundColor = '#0000008a';
+      navList.style.margin = '20px';
+    }
+  }
+
+  window.addEventListener("load", () => {
+    console.log('change bg');
+    checkWidth();
+  })
 
   window.addEventListener("scroll", (event) => {
     const navBar = document.querySelector('.navbar');
@@ -16,6 +28,8 @@ function Header({ currentPage, handlePageChange }) {
     } else {
       navBar.style.backgroundColor = '#00000000';
     }
+
+    checkWidth();
   });
 
   return (

@@ -16,7 +16,6 @@ function Header({ currentPage, handlePageChange }) {
   }
 
   window.addEventListener("load", () => {
-    console.log('change bg');
     checkWidth();
   })
 

@@ -53,8 +53,6 @@ export default function Portfolio() {
     // },
   ];
 
-  console.log(projects);
-
   return (
     <div className='anchor content-body portfolio' id='portfolio'>
       <h1 className='heading-projects'>Projects</h1>

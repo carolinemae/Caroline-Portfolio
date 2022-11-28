@@ -41,13 +41,13 @@ export default function Portfolio() {
     //   url: 'https://fast-gorge-03219.herokuapp.com',
     //   github: 'https://github.com/carolinemae/note-taker'
     // },
-    {
-      name: 'Weather Dashboard',
-      image: require('../images/WeatherDashboard.jpg'),
-      url: 'https://carolinemae.github.io/Weather-Dashboard/',
-      github: 'https://github.com/carolinemae/Weather-Dashboard',
-      desc: 'Simple application to retrieve weather data using the Open Weather Map API\nOne of my earlier projects'
-    },
+    // {
+    //   name: 'Weather Dashboard',
+    //   image: require('../images/WeatherDashboard.jpg'),
+    //   url: 'https://carolinemae.github.io/Weather-Dashboard/',
+    //   github: 'https://github.com/carolinemae/Weather-Dashboard',
+    //   desc: 'Simple application to retrieve weather data using the Open Weather Map API\nOne of my earlier projects'
+    // },
   ];
 
   return (

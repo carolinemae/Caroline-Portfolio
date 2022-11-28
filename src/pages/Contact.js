@@ -58,7 +58,7 @@ export default function Contact() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="message">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={3} placeholder="Hi Caroline..." required />
+          <Form.Control as="textarea" rows={3} placeholder="Hello" required />
         </Form.Group>
         <div className='btn-span'>
           <button className='contact-btn' type="submit" onClick={modalDisplay}>

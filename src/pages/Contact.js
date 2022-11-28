@@ -25,11 +25,14 @@ export default function Contact() {
     data['text'] = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${message}`;
     const params = toParams(data);
 
-    request.open('POST', "https://postmail.invotes.com/send", true);
-    request.setRequestHeader('Content-Type', "application/x-www-form-urlencoded");
-
-    request.send(params);
-
+    try {
+      request.open('POST', "https://postmail.invotes.com/send", true);
+      request.setRequestHeader('Content-Type', "application/x-www-form-urlencoded");
+      request.send(params);
+      modalDisplay();
+    } catch (error) {
+      console.error(error);
+    }
     return false;
   }
 
@@ -61,7 +64,7 @@ export default function Contact() {
           <Form.Control as="textarea" rows={3} placeholder="Hello" required />
         </Form.Group>
         <div className='btn-span'>
-          <button className='contact-btn' type="submit" onClick={modalDisplay}>
+          <button className='contact-btn' type="submit">
             Send
           </button>
         </div>

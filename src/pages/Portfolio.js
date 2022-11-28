@@ -65,24 +65,6 @@ export default function Portfolio() {
             </div>
           </div>
         ))}
-
-
-
-        {/* <Carousel>
-          {projects && projects.map((project) => (
-            <Carousel.Item key={project.name}>
-              <img
-                className="project-img"
-                src={project.image}
-                alt={project.name}
-              />
-              <Carousel.Caption>
-                <p>{project.url}</p>
-                <p>{project.github}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel> */}
       </div>
     </div>
   );

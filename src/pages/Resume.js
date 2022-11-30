@@ -1,5 +1,5 @@
 import React from 'react';
-import Download from '../downloads/Resume.pdf';
+import Download from '../downloads/Resume - Caroline Thomson.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar } from '@fortawesome/free-regular-svg-icons';
@@ -93,7 +93,7 @@ export default function Resume() {
       </div>
       <div className='btn-span'>
         <a 
-        // href={Download} 
+        href={Download} 
         download="Resume - Caroline Thomson" target='_blank' rel="noopener noreferrer">
           <button className='download-btn'>Download Resume</button>
         </a>

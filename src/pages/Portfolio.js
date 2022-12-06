@@ -5,7 +5,7 @@ export default function Portfolio() {
     {
       name: 'JobTracker',
       image: require('../images/JobTracker.jpg'),
-      url: 'https://vast-woodland-80895.herokuapp.com',
+      url: 'https://carolines-job-tracker.herokuapp.com/',
       github: 'https://github.com/carolinemae/Job-Tracker.git',
       desc: 'Solo project created for my current workplace\nCreate projects and timesheets to record project and employee activity',
     },

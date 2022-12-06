@@ -1,5 +1,5 @@
 import React from 'react';
-import Download from '../downloads/Resume - Caroline Thomson.pdf';
+import Download from '../downloads/Caroline Thomson - Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStar } from '@fortawesome/free-regular-svg-icons';
